@@ -18,7 +18,7 @@ const LINKS = {
   github: 'https://github.com/muralipriya-magi',
 };
 // Put your resume PDF in /public/documents/ with exactly this file name
-const RESUME = '/documents/Vishnupriya_-_Resume.pdf';
+const RESUME = '/documents/V-Vishnupriya-Resume.pdf';
 const EMAIL_SUBJECT = 'Hello Vishnupriya - Portfolio enquiry';
 const MAIL_HREF = `mailto:${EMAIL}?subject=${encodeURIComponent(EMAIL_SUBJECT)}`;
 
@@ -72,8 +72,8 @@ const TIMELINE = [
   ] },
 ];
 const EDUCATION = [
-  { i: GraduationCap, t: 'ME – Applied Electronics', s: 'Hindustan College of Engineering & Technology, Coimbatore', m: '2015 • 82.5%' },
-  { i: GraduationCap, t: 'BE – Electronics & Communication', s: 'PSRR College of Engineering for Women, Sivakasi', m: '2013 • 77.7%' },
+  { i: GraduationCap, t: 'ME – Applied Electronics', s: 'Hindustan College of Engineering & Technology, Coimbatore', m: '82.5%' },
+  { i: GraduationCap, t: 'BE – Electronics & Communication', s: 'PSRR College of Engineering for Women, Sivakasi', m: '77.7%' },
   { i: Award, t: 'Full Stack Developer Certification', s: 'TN Skill Corporation', m: 'Certification' },
 ];
 const SERVICES = [
@@ -310,7 +310,7 @@ export default function App() {
             ))}
           </nav>
           <Magnetic strength={0.2}>
-            <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.96 }} href={RESUME} download="Vishnupriya_Resume.pdf"
+            <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.96 }} href={RESUME} download="V-Vishnupriya-Resume.pdf"
               className="hidden lg:inline-flex bg-deep text-white rounded-full px-5 py-2.5 text-xs font-semibold gap-2 items-center">
               Download CV <Download size={14} />
             </motion.a>
@@ -327,7 +327,7 @@ export default function App() {
                 {NAV.map((n) => (
                   <a key={n} href={`#${n.toLowerCase()}`} onClick={() => setOpen(false)} className="text-sm font-medium">{n}</a>
                 ))}
-                <a href={RESUME} download="Vishnupriya_Resume.pdf" className="text-sm font-semibold text-accent inline-flex items-center gap-2">
+                <a href={RESUME} download="V-Vishnupriya-Resume.pdf" className="text-sm font-semibold text-accent inline-flex items-center gap-2">
                   Download CV <Download size={14} />
                 </a>
               </div>
